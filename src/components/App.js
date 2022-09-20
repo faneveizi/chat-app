@@ -9,7 +9,7 @@ import Login from "./Login"
 
 function App() {
   return (
-    <div style={{ fontFamily: 'Avenir' }}>
+    <div style={{ fontFamily: 'Open Sans'  }}>
       <Router>
          <AuthProvider> 
           <Switch>

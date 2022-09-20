@@ -1,25 +1,40 @@
-/* Global */
-
 * {
-  font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
-    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
 }
 
-/* Chats Page */
+
+.top {
+  position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: -60px;
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	z-index: 9;
+	padding: 15px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0px !important;
+}
 
 .chats-page {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100vw;
+  width: 100vw; 
   height: 100vh;
 }
 
 .nav-bar {
+  margin: 0px;
   width: 100%;
   height: 66px;
-  background-color: #002766;
+  background-color: #3C3A3B;
 }
 
 .logo-tab {
@@ -38,16 +53,65 @@
   color: white;
   cursor: pointer;
 }
-
-::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
+.ce-message-bubble {
+  background-color: #118C94 !important;
+  color: white !important;
 }
 
-/* Login Page */
+.ce-chat-card-title-chat{
+  color: black !important;
+}
+
+.ce-active-chat-card{
+  background-color: #F4F4F4 !important;
+}
+.ce-autocomplete-options {
+  border-radius: 5px !important;
+}
+
+#new-chat-plus-button {
+  background-color: #118C94 !important;
+}
+
+#ce-send-message-button {
+  background-color: #118C94 !important;
+}
+
+
+.ce-their-message-bubble {
+  background-color: #ebebeb !important;
+  color: black !important;
+}
+
+.ce-chat-title-container{
+  color: #118C94 !important;
+}
+
+
+
+.ce-delete-chat{
+  background-color: white !important;
+}
+
+.ce-chat-subtitle-message {
+  color: black !important;
+}
+
+.ce-active-chat-card {
+  color: black !important;
+}
+
+.ce-person-container:hover {
+  background-color: aquamarine;
+}
+
+::-webkit-scrollbar {
+  width: 0; 
+  background: transparent; 
+}
+
 
 #login-page {
-  background-image: linear-gradient(#40a9ff, #096dd9);
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -73,10 +137,6 @@
   padding: 12px;
   border-radius: 8px;
   display: inline-block;
-}
-
-.facebook {
-  background-color: #3b5998;
 }
 
 .google {

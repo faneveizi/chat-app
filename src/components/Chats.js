@@ -83,9 +83,9 @@ import React,{useRef,useEffect,useState} from "react";
 import { useHistory } from "react-router-dom";
 import {ChatEngine} from 'react-chat-engine';
 import { auth } from "../firebase";
-
 import {useAuth} from '../contexts/AuthContext';
 import axios from "axios";
+import {FiLogOut} from "react-icons/fi";
 const Chats = () => {
 
 const history = useHistory();
@@ -137,14 +137,14 @@ useEffect(()=>{
        await auth.signOut();
         history.push('/');
     }
-
-    if(!user || loading) return 'Loading ...';
+    if(!user || loading) return "Loading..."
 
   return (
     <div className="chat-page">
       <div className="nav-bar">
-        <div className="logo-tab">SPORT CHAT</div>
-        <div className="logout-tab" onClick={LogoutHandler}>Logout</div>
+        <img src="./Sport-chat.png" alt="bug" height={40} style={{paddingTop: 12,paddingLeft: 20, 
+                                              paddingBottom: 12, paddingRight: 20}}/>
+        <div className="logout-tab" onClick={LogoutHandler}><FiLogOut/></div>
       </div>
     <ChatEngine
         height="calc(100vh-66px)"
