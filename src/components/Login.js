@@ -5,11 +5,12 @@ import { GoogleOutlined } from '@ant-design/icons'
 import firebase from "firebase/app"
 
 import { auth } from "../firebase"
+//import mySvg from './Background1.svg'
 
 export default function Login() {
   return (
-    <div id="background-image">
-      <img src="./Background1.svg" alt="idk" height={655} width={1396} style={{position: "absolute", objectFit:"cover"}} />
+    <div class="background-image">
+      <img src="./Background1.png" alt="idk" style={{ objectFit:"cover"}} />
         <div id='login-page'>
           <div id='login-card'>
             <img src="top.jpg" alt="top" class="top" />
