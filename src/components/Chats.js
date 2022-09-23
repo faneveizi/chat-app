@@ -143,7 +143,7 @@ useEffect(()=>{
     <div className="chat-page">
       <div className="nav-bar">
         <img src="./Sport-chat.png" alt="bug" height={40} style={{paddingTop: 12,paddingLeft: 20, 
-                                              paddingBottom: 12, paddingRight: 20}}/>
+                                            paddingBottom: 12, paddingRight: 20}}/>
         <div className="logout-tab" onClick={LogoutHandler}><FiLogOut/></div>
       </div>
     <ChatEngine
